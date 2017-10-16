@@ -7,7 +7,8 @@ class makeBlinkyDancer extends makeDancer {
   // so we must keep a copy of the old version of this function
 
   step() {
-    super();
+    console.log(this);
+    super.step();
     // call the old version of step at the beginning of any call to this new version of step
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and

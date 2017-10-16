@@ -3,15 +3,17 @@ class makeDancer {
   constructor(top, left, timeBetweenSteps) {
     // use jQuery to create an HTML <span> tag
     this.$node = $('<span class="dancer"></span>');
-    this.step();
     this.setPosition(top, left);
+    this.timeBetweenSteps = timeBetweenSteps;
+    this.step();
     
   }
 
   step() {
     // the basic dancer doesn't do anything interesting at all on each step,
     // it just schedules the next step
-    setTimeout(this.step, this.timeBetweenSteps);
+    console.log(this.timeBetweenSteps);
+    setTimeout(() => this.step(), this.timeBetweenSteps);
   };
 
   setPosition(top, left) {
