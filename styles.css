@@ -3,13 +3,14 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url("img/stage.JPG");
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addActionButton{
   padding:5px 12px;
   float:right;
 }
@@ -21,7 +22,18 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+  background-image: url("img/dancers.png");
+  background-size: cover;
+  height: 54px;
+  width: 96px;
+/*  border:10px solid yellow;
+  border-radius:10px;*/
+  position: absolute;
+  transition: linear;
+}
+.dancer.enlarge{
+  transform: scale(2);
+}
+.dancer.disappear{
+  opacity: 0;
 }
