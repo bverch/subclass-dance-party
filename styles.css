@@ -4,6 +4,7 @@ body, html{
 body{
   margin: 0px;
   background-image: url("img/stage.JPG");
+  background-position: center bottom;
   background-size: cover;
   font-size: 18px;
 }
@@ -22,12 +23,10 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  background-image: url("img/dancers.png");
+  /*background-image: url("img/catStandingUp.jpg");*/
   background-size: cover;
-  height: 54px;
-  width: 96px;
-/*  border:10px solid yellow;
-  border-radius:10px;*/
+  height: 80px;
+  width: 53px;
   position: absolute;
   transition: linear;
 }
