@@ -1,7 +1,7 @@
 window.lineUp = () => {
   const dancerCnt = dancers.length;
   const gap = $('body').width() / (dancerCnt + 1);
-  let hpos = gap;
+  let hpos = gap - 27;
   let deltaV = $('body').height() * 4 / 5;
   let hCenter = $('body').width() / 2;
   for (let i = 0; i < dancerCnt; i++) {
