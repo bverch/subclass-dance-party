@@ -1,4 +1,4 @@
-window.FadeInDancer = class extends Dancer {
+window.FadeInDancer = class extends CuteKittyDancer {
   constructor(top, left, timeBetweenSteps) {
     super(top, left, timeBetweenSteps);
     this.isVanished = true;

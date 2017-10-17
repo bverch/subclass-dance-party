@@ -23,10 +23,7 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  /*background-image: url("img/catStandingUp.jpg");*/
   background-size: cover;
-  height: 80px;
-  width: 53px;
   position: absolute;
   transition: linear;
 }

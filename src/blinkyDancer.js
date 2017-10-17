@@ -1,4 +1,4 @@
-window.BlinkyDancer = class extends Dancer {
+window.BlinkyDancer = class extends CuteKittyDancer {
   constructor(top, left, timeBetweenSteps) {
     super(top, left, timeBetweenSteps);
     this.fourthStep = 0;

@@ -1,4 +1,4 @@
-window.ResizeDancer = class extends Dancer {
+window.ResizeDancer = class extends CuteKittyDancer {
   constructor(top, left, timeBetweenSteps) {
     super(top, left, timeBetweenSteps);
     this.isBig = true;
