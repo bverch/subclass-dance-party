@@ -10,8 +10,9 @@
     <script src="src/fadeInDancer.js"></script>
     <script src="src/resizeDancer.js"></script>
     <script src="src/spookyKitty.js"></script>
-    <script src="src/lineUp.js"></script>
-    <script src="src/pairUp.js"></script>
+    <script src="src/stage.js"></script>
+    <script src="src/rockStage.js"></script>
+    <script src="src/ballroomStage.js"></script>
   </head>
   <body>
     <div class="topbar">
@@ -22,6 +23,10 @@
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="SpookyKitty">add a spooky kitty</a>
       <a href="#" class="addActionButton" data-dancer-maker-function-name="lineUp">line up</a>
       <a href="#" class="addActionButton" data-dancer-maker-function-name="pairUp">pair up</a>
+      <select id="stageSelect" onchange="Stage.setStage()">
+        <option value="rockStage">Rock Stage</option>
+        <option value="ballroomStage">Ballroom</option>
+      </select>
       <audio autoplay loop><source src="music/nyan.mp3" type="audio/mpeg"></audio>
     </div>
     <script src="src/init.js"></script>

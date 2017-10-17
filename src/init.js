@@ -1,5 +1,8 @@
 $(document).ready(function() {
   window.dancers = [];
+  window.stages = [new RockStage(), new BallroomStage()];
+  window.currentDanceFloor = stages[0];
+  Stage.setStage();
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -31,13 +34,13 @@ $(document).ready(function() {
   });
 
   $('.addActionButton').on('click', function(event) {
-    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    var dancerActionFunctionName = $(this).data('dancer-maker-function-name');
 
     // get the maker function for the kind of dancer we're supposed to make
-    var dancerMakerFunction = window[dancerMakerFunctionName];
+    var dancerActionFunction = currentDanceFloor[dancerActionFunctionName];
 
     // make a dancer with a random position
-    dancerMakerFunction();
+    dancerActionFunction();
   });
 });
 

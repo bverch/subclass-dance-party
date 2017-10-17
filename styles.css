@@ -3,9 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url("img/stage.JPG");
+/*  background-image: url("img/stage.JPG");
   background-position: center bottom;
-  background-size: cover;
+  background-size: cover;*/
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
