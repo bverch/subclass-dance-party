@@ -34,9 +34,9 @@ window.Stage = class {
 
   lineUp() {
     const dancerCnt = dancers.length;
-    const gap = $('body').width() / (dancerCnt + 1);
+    const gap = $('#stage').width() / (dancerCnt + 1);
     let hpos = gap;
-    const vpos = $('body').height() * 3 / 4;
+    const vpos = $('#stage').height() * 3 / 4;
     for (let i = 0; i < dancerCnt; i++) {
       const dancer = dancers[i];
       
@@ -57,14 +57,12 @@ window.Stage = class {
   }
 
   static setStage() {
-    console.log('setStage called');
     for (let i = 0; i < stages.length; i++) {
-      console.log('select value', $('#stageSelect').val());
       if ($('#stageSelect').val() === stages[i].stageName) {
         currentDanceFloor = stages[i];
-        $('body').css('background-image', currentDanceFloor.imgUrl);
-        $('body').css('background-position', 'center bottom');
-        $('body').css('background-size', 'cover');
+        $('#stage').css('background-image', currentDanceFloor.imgUrl);
+        $('#stage').css('background-position', 'center bottom');
+        $('#stage').css('background-size', 'cover');
       }
     }
   }

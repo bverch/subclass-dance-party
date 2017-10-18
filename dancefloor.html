@@ -17,17 +17,26 @@
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky kitty</a> 
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="FadeInDancer">add a fadein kitty</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="ResizeDancer">add a resize kitty</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SpookyKitty">add a spooky kitty</a>
-      <a href="#" class="addActionButton" data-dancer-maker-function-name="lineUp">line up</a>
-      <a href="#" class="addActionButton" data-dancer-maker-function-name="pairUp">pair up</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer"><span>add a blinky kitty</span></a> 
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="FadeInDancer"><span>add a fade in kitty</span></a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="ResizeDancer"><span>add a resize kitty</span></a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SpookyKitty"><span>add a spooky kitty</span></a>
+      <a href="#" class="addActionButton" data-dancer-maker-function-name="lineUp"><span>line up</span></a>
+      <a href="#" class="addActionButton" data-dancer-maker-function-name="pairUp"><span>pair up</span></a>
+      <!-- <button class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky kitty</button> 
+      <button class="addDancerButton" data-dancer-maker-function-name="FadeInDancer">add a fadein kitty</button>
+      <button class="addDancerButton" data-dancer-maker-function-name="ResizeDancer">add a resize kitty</button>
+      <button class="addDancerButton" data-dancer-maker-function-name="SpookyKitty">add a spooky kitty</button>
+      <button class="addActionButton" data-dancer-maker-function-name="lineUp">line up</button>
+      <button class="addActionButton" data-dancer-maker-function-name="pairUp">pair up</button> -->
       <select id="stageSelect" onchange="Stage.setStage()">
         <option value="rockStage">Rock Stage</option>
         <option value="ballroomStage">Ballroom</option>
       </select>
       <audio autoplay loop><source src="music/nyan.mp3" type="audio/mpeg"></audio>
+    </div>
+    <div id="stage">
+
     </div>
     <script src="src/init.js"></script>
   </body>

@@ -9,7 +9,5 @@ window.FadeInDancer = class extends CuteKittyDancer {
     this.isVanished ? this.$node.addClass('disappear') : this.$node.removeClass('disappear');
 
     this.isVanished = !this.isVanished;
-
-    // this.$node.fadeToggle(this.timeBetweenSteps);
   }
 };

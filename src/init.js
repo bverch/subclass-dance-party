@@ -25,12 +25,12 @@ $(document).ready(function() {
 
     // make a dancer with a random position
     var dancer = new dancerMakerFunction(
-      $('body').height() * Math.random(),
-      $('body').width() * Math.random(),
+      $('#stage').height() * Math.random(),
+      $('#stage').width() * Math.random(),
       Math.random() * 1000
     );
     dancers.push(dancer);
-    $('body').append(dancer.$node);
+    $('#stage').append(dancer.$node);
   });
 
   $('.addActionButton').on('click', function(event) {
@@ -41,6 +41,23 @@ $(document).ready(function() {
 
     // make a dancer with a random position
     dancerActionFunction();
+  });
+
+  $('#stage').on('click', function(event) {
+    $('#stage').find('.yarn').remove();
+    const offset = $(this).offset();
+    const left = event.pageX - offset.left - 43;
+    const top = event.pageY - offset.top - 40;
+    console.log('stage clicked');
+    
+    const $yarn = $('<span class="yarn"></span>');
+    const styleSettings = {top, left};
+    $yarn.css(styleSettings);
+    $('#stage').append($yarn);
+
+    for (let i = 0; i < dancers.length; i++) {
+      dancers[i].setPosition(top, left);
+    }
   });
 });
 
